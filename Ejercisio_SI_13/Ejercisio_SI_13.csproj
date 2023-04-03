@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF124DE0-6186-4475-BB8B-C289EA270A9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ejercisio_SI_13</RootNamespace>
+    <AssemblyName>Ejercisio_SI_13</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EstacionA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstacionA.Designer.cs">
+      <DependentUpon>EstacionA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstacionB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstacionB.Designer.cs">
+      <DependentUpon>EstacionB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstacionC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstacionC.Designer.cs">
+      <DependentUpon>EstacionC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstacionD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstacionD.Designer.cs">
+      <DependentUpon>EstacionD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstacionE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstacionE.Designer.cs">
+      <DependentUpon>EstacionE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDCard.Designer.cs">
+      <DependentUpon>IDCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo de tarjetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo de tarjetas.Designer.cs">
+      <DependentUpon>Modulo de tarjetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Portada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Portada.Designer.cs">
+      <DependentUpon>Portada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EstacionA.resx">
+      <DependentUpon>EstacionA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstacionB.resx">
+      <DependentUpon>EstacionB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstacionC.resx">
+      <DependentUpon>EstacionC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstacionD.resx">
+      <DependentUpon>EstacionD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstacionE.resx">
+      <DependentUpon>EstacionE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDCard.resx">
+      <DependentUpon>IDCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo de tarjetas.resx">
+      <DependentUpon>Modulo de tarjetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Portada.resx">
+      <DependentUpon>Portada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
